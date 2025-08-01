@@ -485,7 +485,9 @@
     .footer {
         padding: 50px 0;
     }
-
+    .control1{
+        padding: 18px 32px ;
+    }
     .footer-nav {
         gap: 19px;
         flex-direction: column;
