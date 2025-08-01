@@ -243,7 +243,9 @@
         margin: 14px 20px 0;
         padding: 7px 14px 7px 14px;
     }
-
+    .swiper-features {
+    padding-bottom: 28px;
+    }
     .section1 {
         margin-top: 25px;
     }
@@ -261,9 +263,7 @@
     .section-content .btn-order {
         margin-top: -111px !important;
     }
-.swiper-features {
-    padding-bottom: 28px;
-}
+
     .order-btn .ellipse-img {
         height: 50px;
         width: 50px;
