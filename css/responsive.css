@@ -500,6 +500,11 @@
     .section p {
         line-height: 26px;
     }
+        .image {
+        margin-top: -59px !important;
+        margin-left: 164px !important;
+        margin-bottom: 0 !important;
+    }
 }
 
 @media (min-width:768px) and (max-width:992px) {
