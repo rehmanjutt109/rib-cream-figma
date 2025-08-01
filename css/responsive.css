@@ -261,7 +261,9 @@
     .section-content .btn-order {
         margin-top: -111px !important;
     }
-
+.swiper-features {
+    padding-bottom: 28px;
+}
     .order-btn .ellipse-img {
         height: 50px;
         width: 50px;
