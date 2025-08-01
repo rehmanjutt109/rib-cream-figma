@@ -470,9 +470,9 @@
         flex-direction: column;
     }
 
-.swiper-gallery {
-    margin-top: 155px;
-}
+    .swiper-gallery {
+        margin-top: 155px;
+    }
 
     .content-section7 p {
         width: 100%;
