@@ -5,21 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rib cream figma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@0.9.8/dist/driver.min.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/aos.css" />
-    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+    <div class="tour-button-container">
+        <button id="startTour" class="btn-tour">Start Tour</button>
+    </div>
     <!-- Navbar-Section -->
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="mainnavbar">
             <div class="container p-0">
                 <a class="navbar-brand" href="#">
                     <img src="Images/logonew 1.svg" alt="">
@@ -30,24 +33,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto ms-auto">
-                        <li class="nav-item ab-item" data-aos="fade-up-right" data-aos-duration="1000"
-                            data-aos-offset="300">
+                        <li class="nav-item ab-item">
                             <a class="nav-linK ab-link" href="#">Home</a>
                         </li>
-                        <li class="nav-item ab-item" data-aos="fade-up-right" data-aos-duration="1000"
-                            data-aos-offset="300">
+                        <li class="nav-item ab-item">
                             <a class="nav-linK ab-link" href="#">What is it for</a>
                         </li>
-                        <li class="nav-item ab-item" data-aos="fade-up-right" data-aos-duration="1000"
-                            data-aos-offset="300">
+                        <li class="nav-item ab-item">
                             <a class="nav-linK ab-link" href="#">How to use </a>
                         </li>
-                        <li class="nav-item ab-item" data-aos="fade-up-right" data-aos-duration="1000"
-                            data-aos-offset="300">
+                        <li class="nav-item ab-item">
                             <a class="nav-linK ab-link" href="#">About</a>
                         </li>
-                        <li class="nav-item ab-item" data-aos="fade-up-right" data-aos-duration="1000"
-                            data-aos-offset="300">
+                        <li class="nav-item ab-item">
                             <a class="nav-linK ab-link" href="#">Contact</a>
                         </li>
                     </ul>
@@ -67,17 +65,18 @@
         </nav>
     </div>
     <!-- Navbar-Section -->
+
     <!-- Banner Section -->
     <div class="container-fluid p-0">
-        <div class="swiper swiper-banner">
+        <div class="swiper swiper-banner" id="productBanner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slider1">
                     <div class="banner">
                         <div class="container p-0">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
-                                    <h1 data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100"
-                                        data-aos-anchor-placement="top" data-aos-easing="ease-in-out">
+                                    <h1 data-aos="slide-up" data-aos-duration="1200" data-aos-delay="100"
+                                        data-aos-offset="300" data-aos-easing="ease-in-out">
                                         Feel Redefining Beauty and Comfort.
                                     </h1>
                                     <p>
@@ -123,8 +122,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
-                                    <h1 data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100"
-                                        data-aos-anchor-placement="top" data-aos-easing="ease-in-out">
+                                    <h1 data-aos="slide-up" data-aos-duration="1200" data-aos-delay="100"
+                                        data-aos-offset="300" data-aos-easing="ease-in-out">
                                         Feel Redefining Beauty and Comfort.
                                     </h1>
                                     <p>
@@ -170,8 +169,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
-                                    <h1 data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100"
-                                        data-aos-anchor-placement="top" data-aos-easing="ease-in-out">
+                                    <h1 data-aos="slide-up" data-aos-duration="1200" data-aos-delay="100"
+                                        data-aos-offset="300" data-aos-easing="ease-in-out">
                                         Feel Redefining Beauty and Comfort.
                                     </h1>
                                     <p>
@@ -224,7 +223,7 @@
     <!-- Banner Section -->
     <!-- Section1 -->
     <div class="container-fluid p-0">
-        <div class="section1">
+        <div class="section1" id="productPacks">
             <div class="container p-0">
                 <div class="section-content wow animate__animated animate__fadeInUp">
                     <h1 data-aos="fade-down" data-aos-duration="900" data-aos-offset="240">
@@ -308,9 +307,9 @@
     <!-- Section1 -->
     <!-- Section2 -->
     <div class="container-fluid p-0">
-        <div class="section2">
+        <div class="section2" id="productFeatures">
             <div class="container p-0">
-                <div class="section-content1">
+                <div class="section-content1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="300">
                     <h1>
                         Well-known Aesthetic Cream
                     </h1>
@@ -327,7 +326,7 @@
                                     <div class="logo">
                                         <img src="Images/pure-water 1.svg" alt="">
                                     </div>
-                                    <h1>
+                                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">
                                         100% Pure safe ingredients
                                     </h1>
                                     <p>
@@ -450,21 +449,21 @@
     </div>
     <!-- Section2 -->
     <!-- Section3 -->
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" id="productUse">
         <div class="section3">
             <div class="container p-0">
                 <div class="section3-content">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <div class="section-content2">
-                                <h1>
+                                <h1 data-aos="fade-down" data-aos-duration="1200" data-aos-offset="300">
                                     Discover Nature's Best for Your Beauty?
                                 </h1>
                                 <p class="text wow animate__animated animate__zoomIn">
                                     <img src="Images/check-mark.svg" alt="">
                                     Wash the area with soap. Make sure area is dry when finished.
                                 </p>
-                                <p class="text1" data-aos="fade-in">
+                                <p class="text1">
                                     <img src="Images/check-mark.svg" alt="">
                                     Apply a generous amount of cream and rub it in properly.
                                 </p>
@@ -535,16 +534,16 @@
     <!-- Section3 -->
     <!-- Section4 -->
     <div class="container-fluid p-0">
-        <div class="section4">
+        <div class="section4" id="productGallery">
             <div class="container p-0">
                 <div class="section-content3">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <div class="content-section2">
-                                <h1>
+                                <h1 data-aos="fade-down" data-aos-duration="1200" data-aos-offset="300">
                                     Feel no pain at all!
                                 </h1>
-                                <p>
+                                <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
                                     Use for waxing, laser, skin needling, tattooing and much more!!! We sell out very
                                     fast facebook page full of reviews, check us out!!! Quick whilst stocks last. This
                                     cream has been used for years. 100% guaranteed full numbing action!! No pain is what
@@ -562,7 +561,7 @@
                         <div class="col-sm-12 col-md-6">
                             <img src="Images/127707.png" class="contentimg" alt="">
                         </div>
-                        <div class="box2">
+                        <div class="box2" data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="300">
                             <p>
                                 Unlock the secrets of radiant skin with range of natural beauty products. Carefully
                                 crafted
@@ -626,7 +625,7 @@
     <!-- Section4 -->
     <!-- Section5 -->
     <div class="container-fluid p-0">
-        <div class="section5">
+        <div class="section5" id="productUsage">
             <div class="container p-0">
                 <div class="section-content4">
                     <div class="row">
@@ -634,7 +633,7 @@
                             <img src="Images/127707 (1).png" alt="">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-7">
-                            `<div class="accordion accordion-flush" id="accordionFlushExample">
+                            `<div class="accordion accordion-flush" id="applicationSteps">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button"
@@ -725,15 +724,17 @@
     <!-- Section5 -->
     <!-- Section6 -->
     <div class="container-fluid p-0">
-        <div class="section6">
+        <div class="section6" id="productReviews">
             <div class="container p-0">
-                <h1>
-                    Some Reviews from our Users
-                </h1>
-                <p>
-                    Our product is a well-known aesthetic cream that can be used to numb many different areas of the
-                    body before undergoing a painful surgical or cosmetic procedure
-                </p>
+                <div class="section6-content" data-aos="fade-down" data-aos-duration="1200" data-aos-offset="300">
+                    <h1>
+                        Some Reviews from our Users
+                    </h1>
+                    <p>
+                        Our product is a well-known aesthetic cream that can be used to numb many different areas of the
+                        body before undergoing a painful surgical or cosmetic procedure
+                    </p>
+                </div>
                 <div class="d-flex flex5">
                     <div class="box3">
                         <div class="d-flex flex6">
@@ -1750,13 +1751,13 @@
     <!-- Section6 -->
     <!-- Section7 -->
     <div class="container-fluid p-0">
-        <div class="section7">
+        <div class="section7" id="">
             <div class="container p-0">
                 <div class="section-content5">
-                    <h1>
+                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100" data-aos-offset="300">
                         Skincare is Self-Care
                     </h1>
-                    <p>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="300">
                         Join our community and receive updates, rituals, and exclusive offers straight to your inbox.
                     </p>
                 </div>
@@ -1769,20 +1770,22 @@
         <div class="container">
             <div class="section-content6">
                 <img src="Images/Frame 1.png" alt="">
-                <h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" data-aos-offset="300">
                     No Shipping or handling fee
                 </h1>
-                <p>
+                <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="300">
                     On orders over $99!
                 </p>
                 <div class="d-flex flexbtn">
                     <a href="#">
-                        <button class="btn-shop" type="button">
+                        <button class="btn-shop" type="button" data-aos="slide-down" data-aos-duration="1000"
+                            data-aos-delay="300" data-aos-offset="280">
                             Shop Now
                         </button>
                     </a>
                     <a href="#">
-                        <button class="btn-product" type="button">
+                        <button class="btn-product" type="button" data-aos="slide-down" data-aos-duration="1000"
+                            data-aos-delay="300" data-aos-offset="330">
                             View All Prodcuts
                         </button>
                     </a>
@@ -1799,20 +1802,22 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <img src="Images/logonew 1 (1).svg" alt="">
-                            <p>
+                            <p data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100" data-aos-offset="300">
                                 We believe that true beauty is not just about how you look but how you feel.
                             </p>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <div class="section">
-                                <h1>
+                                <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"
+                                    data-aos-offset="300">
                                     Newsletter
                                 </h1>
-                                <p>
+                                <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300"
+                                    data-aos-offset="300">
                                     Subscribe to our newsletter to get the latest prettifier news
                                 </p>
                             </div>
-                            <div class="d-flex input-section" style="gap: 16px;">
+                            <div class="d-flex input-section" id="newsletter" style="gap: 16px;">
                                 <input type="email" class="form-control control1" placeholder="Email Address"
                                     aria-label="Email Address">
                                 <a href="#" style="text-decoration: none;">
@@ -1890,18 +1895,116 @@
 
     <!-- OFF CANVA -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
+    <!-- Change the order of your scripts at the bottom of your HTML file -->
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@0.9.8/dist/driver.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/aos.js"></script>
+
+    <script src="js/script.js"></script>
+
     <script>
         AOS.init(
             {
                 offset: 300,
             }
         );
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if Driver is loaded
+            if (typeof Driver !== 'undefined') {
+                const driver = new Driver({
+                    scrollIntoViewOptions: { behavior: 'smooth', block: 'center' },
+                    showProgress: true, // shows progress bar (1/8 steps)
+                    animate: true,      // enables animation
+                    opacity: 0.75,      // background overlay opacity
+                    onHighlightStarted: (element) => {
+                        console.log('Highlight started on:', element);
+                    }
+                });
+
+                // Define your steps
+                driver.defineSteps([
+                    {
+                        element: '#mainnavbar',
+                        popover: {
+                            title: 'Welcome to Rib Cream',
+                            description: 'Start your journey with our premium aesthetic cream products',
+                            position: 'bottom'
+                        }
+                    },
+                    {
+                        element: '#productBanner',
+                        popover: {
+                            title: 'Our Featured Products',
+                            description: 'Discover our range of premium numbing creams for all your beauty needs',
+                            position: 'bottom'
+                        }
+                    },
+                    {
+                        element: '#productPacks',
+                        popover: {
+                            title: 'Product Packs',
+                            description: 'Choose from our different size options to suit your needs',
+                            position: 'top'
+                        }
+                    },
+                    {
+                        element: '#productFeatures',
+                        popover: {
+                            title: 'Product Features',
+                            description: 'Our cream contains only pure and safe ingredients with no prescription required',
+                            position: 'top'
+                        }
+                    },
+                    {
+                        element: '#productUse',
+                        popover: {
+                            title: 'How To Use',
+                            description: 'Learn the simple steps to get the best results from our product',
+                            position: 'top'
+                        }
+                    },
+                    {
+                        element: '#applicationSteps',
+                        popover: {
+                            title: 'Application Process',
+                            description: 'Follow our easy 4-step process: Wash, Apply, Keep, and Treat',
+                            position: 'left'
+                        }
+                    },
+                    {
+                        element: '#productReviews',
+                        popover: {
+                            title: 'Customer Reviews',
+                            description: 'See what our satisfied customers have to say about our products',
+                            position: 'top'
+                        }
+                    },
+                    {
+                        element: '#newsletter',
+                        popover: {
+                            title: 'Stay Updated',
+                            description: 'Subscribe to our newsletter for the latest news and exclusive offers',
+                            position: 'top'
+                        }
+                    }
+                ]);
+
+                // Button to trigger the tour (must have id="startTour")
+                const tourBtn = document.getElementById('startTour');
+                if (tourBtn) {
+                    tourBtn.addEventListener('click', function () {
+                        driver.start();
+                    });
+                } else {
+                    console.warn('No element with ID "startTour" found.');
+                }
+            } else {
+                console.error('Driver.js is not loaded properly');
+            }
+        });
     </script>
-    <!-- <script src="js/wow.min.js"></script> -->
 </body>
 
 </html>
