@@ -68,7 +68,6 @@ const swiperGallery = new Swiper('.swiper-gallery', {
 document.addEventListener('DOMContentLoaded', function () {
     const driver = new Driver({
         allowClose: false,
-        // overlayClickNext: false
     });
 
     driver.defineSteps([
@@ -142,4 +141,19 @@ document.addEventListener('DOMContentLoaded', function () {
         driver.start();
     });
     console.log('Tour initialized');
+});
+const backToTopBtn = document.getElementById("backToTop");
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 200) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+});
+backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
 });
