@@ -68,6 +68,7 @@ const swiperGallery = new Swiper('.swiper-gallery', {
 document.addEventListener('DOMContentLoaded', function () {
     const driver = new Driver({
         allowClose: false,
+        overlayClickNext: false,
     });
 
     driver.defineSteps([
