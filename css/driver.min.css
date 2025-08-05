@@ -6,9 +6,7 @@ div#driver-popover-item {
     margin: 0;
     padding: 25px 20px;
     border-radius: 5px;
-    /* min-width: 250px; */
     max-width: 350px;
-    left: 50px !important;
     box-shadow: 0 1px 10px #00000066;
     z-index: 1000000000
 }
