@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
 body,
 html {
     overflow-x: hidden;
@@ -1147,9 +1152,20 @@ html {
     transition: ease 0.7s;
 }
 
-.image {
+/* .image {
     width: min-content;
     margin: -67px 0 0 auto;
+} */
+.scroll-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 87px;
+    margin-top: 15px;
+    z-index: 10000;
+    background-color: #ffdada;
+    border: none;
+    border-radius: 50%;
+    padding: 25px;
 }
 
 .rect-img {
@@ -1158,31 +1174,33 @@ html {
 
 .vector {
     position: absolute;
-    margin: 12px 0 0 -32px;
+    margin: -11px 0 0 -10px;
 }
 
 .tour-button-container {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 10001;
 }
 
 .btn-tour {
-    background-color: #98734B;
+    background: linear-gradient(142.65deg, #AD0B13 7.53%, #D47E82 81.67%);
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 11px 30px;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    font-family: 'PT Serif';
+    box-shadow: 0 4px 8px #00000033;
+    transition: all 0.7s ease;
 }
 
 .btn-tour:hover {
-    background-color: #7a5c3c;
+    background: linear-gradient(142.65deg, #be2d34 7.53%, #8d1e24 81.67%);
     transform: translateY(-2px);
+    transition: all 0.7s ease;
 }
 
 .driver-popover {
@@ -1193,4 +1211,10 @@ html {
     background: #fff !important;
     color: #000 !important;
     position: fixed !important;
+}
+
+div#driver-popover-item {
+    display: block;
+    left: 100px;
+    top: 127px;
 }
